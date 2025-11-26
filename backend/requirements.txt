@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+python-multipart
+torch
+torchvision
+timm
+transformers
+pillow
+numpy
+scikit-learn
+matplotlib
+opencv-python
+scikit-image
+lime
