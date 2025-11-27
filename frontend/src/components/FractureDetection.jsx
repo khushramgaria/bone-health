@@ -55,7 +55,9 @@ const FractureDetection = ({ onBack }) => {
             <h2 className="text-2xl font-bold text-gray-800">
               AI Fracture Detection Model
             </h2>
-            <p className="text-gray-600">Upload X-ray image for analysis</p>
+            <p className="text-gray-600">
+              Upload X-ray image for analysis using 2 Medical Transformers
+            </p>
           </div>
         </div>
 
@@ -100,7 +102,7 @@ const FractureDetection = ({ onBack }) => {
                   {loading ? (
                     <span className="flex items-center justify-center">
                       <span className="animate-spin mr-2">⏳</span>
-                      Analyzing X-ray...
+                      Running 2 Medical Transformers...
                     </span>
                   ) : (
                     "Analyze X-ray"
@@ -114,7 +116,7 @@ const FractureDetection = ({ onBack }) => {
         {/* Results Section */}
         {result && (
           <div className="space-y-6">
-            {/* Prediction */}
+            {/* Final Prediction */}
             <div
               className={`p-6 rounded-xl text-center ${
                 result.prediction === "Fracture Detected"
@@ -123,53 +125,63 @@ const FractureDetection = ({ onBack }) => {
               }`}
             >
               <h3 className="text-3xl font-bold mb-2">{result.prediction}</h3>
-              <p className="text-xl">Confidence: {result.confidence}%</p>
+              <p className="text-xl">
+                Ensemble Confidence: {result.confidence}%
+              </p>
               <p className="mt-2 text-lg font-semibold">
                 Risk Level: {result.risk_level}
               </p>
             </div>
 
             {/* Model Scores Breakdown */}
-            {result.model_scores && (
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="font-bold text-lg mb-3">
-                  📊 Model Ensemble Breakdown
-                </h3>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span>Hugging Face Model (Medical):</span>
-                    <span className="font-bold">
-                      {result.model_scores.huggingface_model}%
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h3 className="font-bold text-lg mb-4">
+                🤖 Transformer Model Breakdown
+              </h3>
+              <div className="space-y-3">
+                {/* Model 1 */}
+                <div className="bg-white p-4 rounded-lg border">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-semibold">
+                      Model 1: {result.model_scores.model_1_siglip.transformer}
+                    </span>
+                    <span className="text-2xl font-bold text-indigo-600">
+                      {result.model_scores.model_1_siglip.confidence}%
                     </span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Swin Transformer:</span>
-                    <span className="font-bold">
-                      {result.model_scores.swin_transformer}%
+                  <p className="text-sm text-gray-600">
+                    Prediction: {result.model_scores.model_1_siglip.prediction}
+                  </p>
+                </div>
+
+                {/* Model 2 */}
+                <div className="bg-white p-4 rounded-lg border">
+                  <div className="flex justify-between items-center mb-2">
+                    <span className="font-semibold">
+                      Model 2: {result.model_scores.model_2_vit.transformer}
+                    </span>
+                    <span className="text-2xl font-bold text-blue-600">
+                      {result.model_scores.model_2_vit.confidence}%
                     </span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>ViT Transformer:</span>
-                    <span className="font-bold">
-                      {result.model_scores.vit_transformer}%
+                  <p className="text-sm text-gray-600">
+                    Prediction: {result.model_scores.model_2_vit.prediction}
+                  </p>
+                </div>
+
+                {/* Ensemble */}
+                <div className="bg-gradient-to-r from-indigo-50 to-blue-50 p-4 rounded-lg border-2 border-indigo-300">
+                  <div className="flex justify-between items-center">
+                    <span className="font-bold text-lg">
+                      Final Ensemble (Average):
                     </span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>DeiT Transformer:</span>
-                    <span className="font-bold">
-                      {result.model_scores.deit_transformer}%
-                    </span>
-                  </div>
-                  <hr className="my-2" />
-                  <div className="flex justify-between text-lg">
-                    <span className="font-bold">Final Ensemble:</span>
-                    <span className="font-bold text-indigo-600">
+                    <span className="text-3xl font-bold text-indigo-700">
                       {result.model_scores.ensemble}%
                     </span>
                   </div>
                 </div>
               </div>
-            )}
+            </div>
 
             {/* Explainability Section */}
             <div>
@@ -178,26 +190,35 @@ const FractureDetection = ({ onBack }) => {
               </h3>
               <div className="grid md:grid-cols-3 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Grad-CAM Heatmap</h4>
+                  <h4 className="font-semibold mb-2">Grad-CAM: SigLIP</h4>
+                  <p className="text-xs text-gray-600 mb-2">
+                    Model 1 attention regions
+                  </p>
                   <img
-                    src={`data:image/png;base64,${result.gradcam}`}
-                    alt="Grad-CAM"
+                    src={`data:image/png;base64,${result.explainability.gradcam_siglip}`}
+                    alt="Grad-CAM SigLIP"
+                    className="w-full rounded-lg shadow"
+                  />
+                </div>
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h4 className="font-semibold mb-2">Grad-CAM: ViT</h4>
+                  <p className="text-xs text-gray-600 mb-2">
+                    Model 2 attention regions
+                  </p>
+                  <img
+                    src={`data:image/png;base64,${result.explainability.gradcam_vit}`}
+                    alt="Grad-CAM ViT"
                     className="w-full rounded-lg shadow"
                   />
                 </div>
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <h4 className="font-semibold mb-2">LIME Interpretation</h4>
+                  <p className="text-xs text-gray-600 mb-2">
+                    Feature importance map
+                  </p>
                   <img
-                    src={`data:image/png;base64,${result.lime}`}
+                    src={`data:image/png;base64,${result.explainability.lime_interpretation}`}
                     alt="LIME"
-                    className="w-full rounded-lg shadow"
-                  />
-                </div>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h4 className="font-semibold mb-2">Attention Rollout</h4>
-                  <img
-                    src={`data:image/png;base64,${result.attention}`}
-                    alt="Attention"
                     className="w-full rounded-lg shadow"
                   />
                 </div>

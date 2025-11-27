@@ -7,72 +7,117 @@ from lime import lime_image
 from skimage.segmentation import mark_boundaries
 
 
-def generate_gradcam_simple(model, input_tensor, original_image):
+def generate_gradcam_hf(model, inputs, original_image, model_name="Model"):
     """
-    Simplified Grad-CAM without Captum
+    Generate Grad-CAM for HuggingFace transformer models
     """
     try:
         model.eval()
         
-        # Forward pass
-        input_tensor.requires_grad = True
-        output = model(input_tensor)
+        # Enable gradients for input
+        for key in inputs.keys():
+            if torch.is_tensor(inputs[key]):
+                inputs[key].requires_grad = True
         
-        # Get the fracture class score (class 1)
-        fracture_score = output[0, 1]
+        # Forward pass
+        outputs = model(**inputs)
+        logits = outputs.logits
+        
+        # Get the predicted class score (fracture class - usually index 1)
+        if logits.shape[1] > 1:
+            target_score = logits[0, 1]
+        else:
+            target_score = logits[0, 0]
         
         # Backward pass
         model.zero_grad()
-        fracture_score.backward(retain_graph=True)
+        target_score.backward(retain_graph=True)
         
-        # Get gradients
-        gradients = input_tensor.grad.data
+        # Get gradients from the input
+        pixel_values = inputs['pixel_values']
+        gradients = pixel_values.grad
         
-        # Global average pooling of gradients
-        weights = gradients.mean(dim=(2, 3), keepdim=True)
+        if gradients is None:
+            print(f"{model_name}: No gradients available, using fallback")
+            return create_fallback_heatmap(original_image)
         
-        # Weighted combination
-        activation = input_tensor * weights
-        heatmap = activation.sum(dim=1).squeeze()
+        # Create heatmap
+        gradients = gradients.cpu().detach().numpy()[0]
+        activation = pixel_values.cpu().detach().numpy()[0]
+        
+        # Weight the channels by their gradients
+        weights = np.mean(gradients, axis=(1, 2))
+        cam = np.zeros(activation.shape[1:], dtype=np.float32)
+        
+        for i, w in enumerate(weights):
+            cam += w * activation[i]
         
         # ReLU and normalize
-        heatmap = F.relu(heatmap)
-        heatmap = heatmap.cpu().detach().numpy()
-        heatmap = (heatmap - heatmap.min()) / (heatmap.max() - heatmap.min() + 1e-8)
-        heatmap = np.uint8(255 * heatmap)
+        cam = np.maximum(cam, 0)
+        if cam.max() > 0:
+            cam = cam / cam.max()
         
         # Resize to original image size
-        heatmap = cv2.resize(heatmap, original_image.size)
+        cam = cv2.resize(cam, original_image.size)
+        heatmap = np.uint8(255 * cam)
         heatmap = cv2.applyColorMap(heatmap, cv2.COLORMAP_JET)
         
         # Overlay on original
-        original_np = np.array(original_image.resize(original_image.size))
+        original_np = np.array(original_image)
         if len(original_np.shape) == 2:
             original_np = cv2.cvtColor(original_np, cv2.COLOR_GRAY2RGB)
         
         overlay = cv2.addWeighted(original_np, 0.6, heatmap, 0.4, 0)
+        
+        print(f"✓ {model_name} Grad-CAM generated")
         return overlay
         
     except Exception as e:
-        print(f"Grad-CAM error: {e}")
+        print(f"{model_name} Grad-CAM error: {e}")
+        return create_fallback_heatmap(original_image)
+
+
+def create_fallback_heatmap(original_image):
+    """
+    Create a simple edge-based heatmap as fallback
+    """
+    try:
+        img_gray = np.array(original_image.convert('L'))
+        edges = cv2.Canny(img_gray, 50, 150)
+        edges = cv2.GaussianBlur(edges, (5, 5), 0)
+        
+        heatmap = cv2.applyColorMap(edges, cv2.COLORMAP_JET)
+        
+        original_np = np.array(original_image)
+        if len(original_np.shape) == 2:
+            original_np = cv2.cvtColor(original_np, cv2.COLOR_GRAY2RGB)
+        
+        overlay = cv2.addWeighted(original_np, 0.7, heatmap, 0.3, 0)
+        return overlay
+    except:
         return np.array(original_image)
 
 
-def generate_lime(original_image, model, preprocess):
+def generate_lime_hf(original_image, model, processor):
     """
-    LIME explanation
+    LIME explanation for HuggingFace models
     """
     try:
         def batch_predict(images):
-            batch = torch.stack([preprocess(Image.fromarray(img.astype('uint8'))) 
-                                for img in images])
+            batch_images = []
+            for img in images:
+                pil_img = Image.fromarray(img.astype('uint8'))
+                batch_images.append(pil_img)
+            
+            inputs = processor(images=batch_images, return_tensors="pt")
             device = next(model.parameters()).device
-            batch = batch.to(device)
+            inputs = {k: v.to(device) for k, v in inputs.items()}
             
             with torch.no_grad():
-                outputs = torch.softmax(model(batch), dim=1)
+                outputs = model(**inputs)
+                probs = torch.softmax(outputs.logits, dim=1)
             
-            return outputs.cpu().numpy()
+            return probs.cpu().numpy()
         
         explainer = lime_image.LimeImageExplainer()
         image_np = np.array(original_image.resize((224, 224)))
@@ -85,7 +130,7 @@ def generate_lime(original_image, model, preprocess):
             batch_predict,
             top_labels=2,
             hide_color=0,
-            num_samples=50  # Reduced for speed
+            num_samples=50
         )
         
         temp, mask = explanation.get_image_and_mask(
@@ -98,45 +143,9 @@ def generate_lime(original_image, model, preprocess):
         lime_img = mark_boundaries(temp / 255.0, mask)
         lime_img = (lime_img * 255).astype(np.uint8)
         
+        print("✓ LIME interpretation generated")
         return lime_img
         
     except Exception as e:
         print(f"LIME error: {e}")
-        return np.array(original_image.resize((224, 224)))
-
-
-def generate_attention_rollout(model, input_tensor, original_image):
-    """
-    Attention rollout for Vision Transformers
-    """
-    try:
-        # Simple attention visualization
-        with torch.no_grad():
-            _ = model(input_tensor)
-        
-        # Fallback: Create a simple attention-like visualization
-        img_gray = np.array(original_image.convert('L'))
-        edges = cv2.Canny(img_gray, 50, 150)
-        edges = cv2.GaussianBlur(edges, (5, 5), 0)
-        
-        # Normalize
-        attention_map = edges.astype(float)
-        if attention_map.max() > 0:
-            attention_map = attention_map / attention_map.max()
-        attention_map = np.uint8(255 * attention_map)
-        
-        # Apply colormap
-        attention_map = cv2.resize(attention_map, original_image.size)
-        heatmap = cv2.applyColorMap(attention_map, cv2.COLORMAP_VIRIDIS)
-        
-        # Overlay
-        original_np = np.array(original_image)
-        if len(original_np.shape) == 2:
-            original_np = cv2.cvtColor(original_np, cv2.COLOR_GRAY2RGB)
-        
-        overlay = cv2.addWeighted(original_np, 0.6, heatmap, 0.4, 0)
-        return overlay
-        
-    except Exception as e:
-        print(f"Attention Rollout error: {e}")
         return np.array(original_image.resize((224, 224)))

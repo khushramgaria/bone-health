@@ -3,7 +3,6 @@ uvicorn
 python-multipart
 torch>=2.0.0
 torchvision>=0.15.0
-timm
 transformers>=4.30.0
 pillow
 numpy

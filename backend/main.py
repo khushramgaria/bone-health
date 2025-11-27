@@ -1,12 +1,18 @@
 from fastapi import FastAPI, File, UploadFile
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image
 import io
-import base64
+import uvicorn
 from models import predict_fracture, predict_bone_health
 
-app = FastAPI()
+
+app = FastAPI(
+    title="Bone Health AI API",
+    description="Multi-ViT Enhanced CNN Framework for Bone Health Assessment",
+    version="1.0.0"
+)
+
 
 # Enable CORS for React frontend
 app.add_middleware(
@@ -16,6 +22,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.post("/api/predict-fracture")
 async def fracture_detection(file: UploadFile = File(...)):
@@ -57,4 +64,22 @@ async def bone_health_prediction(file: UploadFile = File(...)):
 
 @app.get("/")
 def root():
-    return {"message": "Bone Health AI Backend Running"}
+    return {
+        "message": "Bone Health AI Backend Running",
+        "status": "operational",
+        "endpoints": {
+            "fracture_detection": "/api/predict-fracture",
+            "bone_health": "/api/predict-bone-health"
+        }
+    }
+
+
+# Run the application
+if __name__ == "__main__":
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=True,
+        log_level="info"
+    )
