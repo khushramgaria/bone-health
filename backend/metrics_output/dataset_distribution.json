@@ -1,0 +1,22 @@
+{
+    "split": [
+        "Train",
+        "Validation",
+        "Test"
+    ],
+    "no_fracture": [
+        680,
+        170,
+        4
+    ],
+    "fracture": [
+        520,
+        130,
+        4
+    ],
+    "total": [
+        1200,
+        300,
+        8
+    ]
+}

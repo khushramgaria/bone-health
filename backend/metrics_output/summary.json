@@ -1,0 +1,14 @@
+{
+    "total_images": 8,
+    "fracture_images": 4,
+    "no_fracture_images": 4,
+    "models_used": [
+        "SigLIP",
+        "ViT (Real Gemini)",
+        "Ensemble (Average)"
+    ],
+    "siglip_accuracy": 0.875,
+    "vit_accuracy": 0.875,
+    "ensemble_accuracy": 0.875,
+    "ensemble_auc": 0.969
+}

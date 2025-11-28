@@ -1,0 +1,42 @@
+{
+    "class": [
+        "No Fracture",
+        "Fracture"
+    ],
+    "siglip_precision": [
+        1.0,
+        0.8
+    ],
+    "siglip_recall": [
+        0.75,
+        1.0
+    ],
+    "siglip_f1": [
+        0.857,
+        0.889
+    ],
+    "vit_precision": [
+        1.0,
+        0.8
+    ],
+    "vit_recall": [
+        0.75,
+        1.0
+    ],
+    "vit_f1": [
+        0.857,
+        0.889
+    ],
+    "ensemble_precision": [
+        1.0,
+        0.8
+    ],
+    "ensemble_recall": [
+        0.75,
+        1.0
+    ],
+    "ensemble_f1": [
+        0.857,
+        0.889
+    ]
+}

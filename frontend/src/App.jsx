@@ -2,6 +2,7 @@ import { useState } from "react";
 import ModuleSelector from "./components/ModuleSelector";
 import FractureDetection from "./components/FractureDetection";
 import BoneHealth from "./components/BoneHealth";
+import ModelPerformance from "./components/ModelPerformance";
 
 function App() {
   const [selectedModule, setSelectedModule] = useState(null);
@@ -14,7 +15,7 @@ function App() {
             🦴 Bone Health AI Assessment
           </h1>
           <p className="text-gray-600 mt-1">
-            Multi-ViT Enhanced CNN Framework for Bone Health Prediction
+            Multi-ViT Enhanced Framework with Comprehensive Evaluation
           </p>
         </div>
       </header>
@@ -24,13 +25,15 @@ function App() {
           <ModuleSelector onSelect={setSelectedModule} />
         ) : selectedModule === "fracture" ? (
           <FractureDetection onBack={() => setSelectedModule(null)} />
-        ) : (
+        ) : selectedModule === "bone-health" ? (
           <BoneHealth onBack={() => setSelectedModule(null)} />
-        )}
+        ) : selectedModule === "performance" ? (
+          <ModelPerformance onBack={() => setSelectedModule(null)} />
+        ) : null}
       </main>
 
       <footer className="text-center py-6 text-gray-600 text-sm">
-        Powered by Swin, DeiT, ViT Transformers with Explainable AI
+        Powered by SigLIP Transformer with Explainable AI
       </footer>
     </div>
   );
