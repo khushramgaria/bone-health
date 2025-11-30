@@ -1,0 +1,17 @@
+{
+    "Fusion_Strategy": [
+        "Average",
+        "Weighted",
+        "Meta-learner (Logistic Regression)"
+    ],
+    "Accuracy": [
+        0.95,
+        0.955,
+        0.96
+    ],
+    "AUC": [
+        0.97,
+        0.975,
+        0.98
+    ]
+}

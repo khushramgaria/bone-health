@@ -1,22 +1,22 @@
 {
-    "split": [
+    "Split": [
         "Train",
         "Validation",
         "Test"
     ],
-    "no_fracture": [
+    "No_Fracture": [
         680,
         170,
-        4
+        59
     ],
-    "fracture": [
+    "Fracture": [
         520,
         130,
-        4
+        49
     ],
-    "total": [
+    "Total": [
         1200,
         300,
-        8
+        108
     ]
 }

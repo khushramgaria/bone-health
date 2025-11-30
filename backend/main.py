@@ -85,6 +85,21 @@ async def bone_health_from_values(
     except Exception as e:
         return JSONResponse(content={"error": str(e)}, status_code=500)
     
+from fastapi.responses import FileResponse
+import os
+
+# Add this endpoint
+@app.get("/api/metrics/image/{filename}")
+async def get_metric_image(filename: str):
+    """
+    Serve generated metric images
+    """
+    file_path = os.path.join("metrics_output", filename)
+    if os.path.exists(file_path):
+        return FileResponse(file_path)
+    return {"error": "Image not found"}
+
+
 @app.get("/api/metrics/all-data")
 async def get_all_metrics_data():
     """
@@ -112,6 +127,7 @@ async def get_all_metrics_data():
         return JSONResponse(content=all_data)
     
     except Exception as e:
+        print(e)
         return JSONResponse(content={"error": str(e)}, status_code=500)
 
 

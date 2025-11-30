@@ -1,42 +1,42 @@
 {
-    "class": [
+    "Class": [
         "No Fracture",
         "Fracture"
     ],
-    "siglip_precision": [
-        1.0,
-        0.8
+    "SigLIP_Precision": [
+        0.831,
+        0.796
     ],
-    "siglip_recall": [
-        0.75,
-        1.0
+    "SigLIP_Recall": [
+        0.831,
+        0.796
     ],
-    "siglip_f1": [
+    "SigLIP_F1": [
+        0.831,
+        0.796
+    ],
+    "ViT_Precision": [
+        0.873,
+        0.792
+    ],
+    "ViT_Recall": [
+        0.814,
+        0.857
+    ],
+    "ViT_F1": [
+        0.842,
+        0.824
+    ],
+    "Ensemble_Precision": [
         0.857,
-        0.889
+        0.788
     ],
-    "vit_precision": [
-        1.0,
-        0.8
+    "Ensemble_Recall": [
+        0.814,
+        0.837
     ],
-    "vit_recall": [
-        0.75,
-        1.0
-    ],
-    "vit_f1": [
-        0.857,
-        0.889
-    ],
-    "ensemble_precision": [
-        1.0,
-        0.8
-    ],
-    "ensemble_recall": [
-        0.75,
-        1.0
-    ],
-    "ensemble_f1": [
-        0.857,
-        0.889
+    "Ensemble_F1": [
+        0.835,
+        0.812
     ]
 }

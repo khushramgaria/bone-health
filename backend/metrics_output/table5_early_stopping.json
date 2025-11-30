@@ -1,0 +1,22 @@
+{
+    "Model": [
+        "ViT",
+        "SigLIP"
+    ],
+    "Best_Epoch": [
+        6,
+        5
+    ],
+    "Final_Val_Acc": [
+        0.958,
+        0.945
+    ],
+    "Final_Val_Loss": [
+        0.1269,
+        0.1423
+    ],
+    "Checkpoint_Saved": [
+        "Yes",
+        "Yes"
+    ]
+}

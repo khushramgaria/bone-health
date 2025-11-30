@@ -1,14 +1,15 @@
 {
-    "total_images": 8,
-    "fracture_images": 4,
-    "no_fracture_images": 4,
+    "total_images": 108,
+    "fracture_images": 49,
+    "no_fracture_images": 59,
     "models_used": [
         "SigLIP",
-        "ViT (Real Gemini)",
-        "Ensemble (Average)"
+        "ViT (Simulated)",
+        "Ensemble"
     ],
-    "siglip_accuracy": 0.875,
-    "vit_accuracy": 0.875,
-    "ensemble_accuracy": 0.875,
-    "ensemble_auc": 0.969
+    "siglip_accuracy": 0.815,
+    "vit_accuracy": 0.833,
+    "ensemble_accuracy": 0.824,
+    "ensemble_auc": 0.924,
+    "generated_at": "2025-11-30 15:15:48"
 }

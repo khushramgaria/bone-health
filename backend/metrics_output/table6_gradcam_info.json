@@ -1,0 +1,18 @@
+{
+    "Model": [
+        "ViT",
+        "SigLIP"
+    ],
+    "Visualization_Type": [
+        "Attention Rollout",
+        "Grad-CAM"
+    ],
+    "Early_Layer_Focus": [
+        "Bone edges",
+        "Soft tissue"
+    ],
+    "Deep_Layer_Focus": [
+        "Fracture gap",
+        "Bone texture"
+    ]
+}

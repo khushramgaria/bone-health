@@ -34,7 +34,7 @@ except Exception as e:
 # =================== CONFIGURE GEMINI (as ViT) ===================
 try:
     genai.configure(api_key=os.getenv('GEMINI_API_KEY'))
-    gemini_model = genai.GenerativeModel('gemini-2.5-flash')
+    gemini_model = genai.GenerativeModel('gemini-2.5-flash-lite')
     print("✓ Gemini API configured successfully (ViT backend)")
 except Exception as e:
     print(f"⚠ Gemini API configuration failed: {e}")
