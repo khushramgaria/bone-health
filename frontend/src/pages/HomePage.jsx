@@ -22,15 +22,15 @@ const HomePage = () => {
       path: "/fracture-detection",
       gradient: "from-purple-500 to-pink-500",
     },
-    {
-      id: 3,
-      title: "Model Performance",
-      icon: "📊",
-      description:
-        "Comprehensive evaluation metrics, confusion matrices, ROC curves, and model comparisons",
-      path: "/model-performance",
-      gradient: "from-green-500 to-teal-500",
-    },
+    // {
+    //   id: 3,
+    //   title: "Model Performance",
+    //   icon: "📊",
+    //   description:
+    //     "Comprehensive evaluation metrics, confusion matrices, ROC curves, and model comparisons",
+    //   path: "/model-performance",
+    //   gradient: "from-green-500 to-teal-500",
+    // },
   ];
 
   return (
@@ -62,7 +62,7 @@ const HomePage = () => {
       </div>
 
       {/* Module Cards */}
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
         {modules.map((module) => (
           <div
             key={module.id}
