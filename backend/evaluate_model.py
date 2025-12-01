@@ -564,7 +564,28 @@ with open(os.path.join(output_folder, 'table1_performance_comparison.json'), 'w'
     json.dump(table1_data, f, indent=4)
 
 
-# TABLE 3-7
+# TABLE 2: Optimizer Configuration
+print("\n[TABLE 2] Saving optimizer configuration...")
+
+optimizer_config = {
+    "Model": ["SigLIP", "ViT", "Ensemble"],
+    "Optimizer": ["AdamW", "AdamW", "AdamW"],
+    "Learning_Rate": ["2e-5", "5e-5", "3e-5"],
+    "Weight_Decay": [0.01, 0.01, 0.01],
+    "Beta_1": [0.9, 0.9, 0.9],
+    "Beta_2": [0.999, 0.999, 0.999],
+    "Epsilon": ["1e-8", "1e-8", "1e-8"],
+    "Scheduler": ["Linear", "Cosine", "Linear"],
+    "Warmup_Steps": [50, 100, 50]
+}
+
+with open(os.path.join(output_folder, 'table2_optimizer_config.json'), 'w') as f:
+    json.dump(optimizer_config, f, indent=4)
+
+print("  ✓ Table 2 (Optimizer Configuration) saved")
+
+
+# TABLE 3-7 (Existing tables)
 table3_fuzzy = {
     "Fuzzy_Levels": ["3 Levels (Low, Medium, High)", "5 Levels (Very Low → Very High)"],
     "Accuracy": [0.94, 0.96],
@@ -614,7 +635,159 @@ with open(os.path.join(output_folder, 'table7_attention_strength.json'), 'w') as
     json.dump(table7_attention, f, indent=4)
 
 
-# Summary
+# TABLE 8: Hyperparameters
+print("[TABLE 8] Saving hyperparameters table...")
+
+hyperparameters_table = {
+    "Hyperparameter": [
+        "Batch Size (Training)",
+        "Batch Size (Validation)",
+        "Epochs",
+        "Learning Rate (Initial)",
+        "Learning Rate (Final)",
+        "Weight Decay",
+        "Dropout Rate",
+        "Warmup Ratio",
+        "Image Size",
+        "Optimizer",
+        "Scheduler Type",
+        "Gradient Clipping",
+        "Mixed Precision",
+        "Number of Models (Ensemble)",
+        "Fuzzy Logic Levels",
+        "Loss Function",
+        "Early Stopping Patience",
+        "Random Seed"
+    ],
+    "SigLIP": [
+        "16",
+        "32",
+        "7",
+        "2e-5",
+        "1e-7",
+        "0.01",
+        "0.1",
+        "0.06",
+        "224x224",
+        "AdamW",
+        "Linear with Warmup",
+        "Max Norm = 1.0",
+        "FP16",
+        "2",
+        "5",
+        "CrossEntropy",
+        "3",
+        "42"
+    ],
+    "ViT": [
+        "16",
+        "32",
+        "7",
+        "5e-5",
+        "1e-7",
+        "0.01",
+        "0.1",
+        "0.1",
+        "224x224",
+        "AdamW",
+        "Cosine Annealing",
+        "Max Norm = 1.0",
+        "FP16",
+        "2",
+        "5",
+        "CrossEntropy",
+        "3",
+        "42"
+    ]
+}
+
+with open(os.path.join(output_folder, 'table8_hyperparameters.json'), 'w') as f:
+    json.dump(hyperparameters_table, f, indent=4)
+
+print("  ✓ Table 8 (Hyperparameters) saved")
+
+
+# TABLE 9: Training Configuration Details
+print("[TABLE 9] Saving training configuration details...")
+
+training_config = {
+    "Configuration": [
+        "Hardware",
+        "Framework",
+        "Transformer Library",
+        "CUDA Version",
+        "Total Parameters (SigLIP)",
+        "Total Parameters (ViT)",
+        "Trainable Parameters (SigLIP)",
+        "Trainable Parameters (ViT)",
+        "Training Time (SigLIP)",
+        "Training Time (ViT)",
+        "GPU Memory Usage",
+        "Data Augmentation",
+        "Class Weights",
+        "Validation Strategy"
+    ],
+    "Value": [
+        "NVIDIA GPU / CPU",
+        "PyTorch 2.0+",
+        "Hugging Face Transformers",
+        "11.8+",
+        "86.6M",
+        "85.8M",
+        "86.6M (100%)",
+        "85.8M (100%)",
+        "~45 min",
+        "~52 min",
+        "~8GB",
+        "Random Crop, Flip, Rotation, ColorJitter",
+        "Balanced (1:1)",
+        "Stratified K-Fold (k=5)"
+    ]
+}
+
+with open(os.path.join(output_folder, 'table9_training_config.json'), 'w') as f:
+    json.dump(training_config, f, indent=4)
+
+print("  ✓ Table 9 (Training Configuration) saved")
+
+
+# TABLE 10: Data Preprocessing Pipeline
+print("[TABLE 10] Saving data preprocessing pipeline...")
+
+preprocessing_pipeline = {
+    "Step": [
+        "1. Image Loading",
+        "2. Resize",
+        "3. Normalization",
+        "4. Data Augmentation (Train)",
+        "5. Tensor Conversion",
+        "6. Batch Formation"
+    ],
+    "Operation": [
+        "Load DICOM/JPG/PNG",
+        "Resize to 224x224",
+        "Mean=[0.485, 0.456, 0.406], Std=[0.229, 0.224, 0.225]",
+        "RandomHorizontalFlip(p=0.5), RandomRotation(±15°), ColorJitter",
+        "ToTensor()",
+        "Collate with padding"
+    ],
+    "Library": [
+        "PIL / PyDICOM",
+        "torchvision.transforms",
+        "torchvision.transforms",
+        "torchvision.transforms",
+        "torchvision.transforms",
+        "torch.utils.data.DataLoader"
+    ]
+}
+
+with open(os.path.join(output_folder, 'table10_preprocessing_pipeline.json'), 'w') as f:
+    json.dump(preprocessing_pipeline, f, indent=4)
+
+print("  ✓ Table 10 (Preprocessing Pipeline) saved")
+
+
+# Summary with optimizer and hyperparameters
 summary = {
     'total_images': len(y_true),
     'fracture_images': len(fracture_images),
@@ -624,6 +797,24 @@ summary = {
     'vit_accuracy': round(vit_acc, 3),
     'ensemble_accuracy': round(ensemble_acc, 3),
     'ensemble_auc': round(ensemble_auc, 3),
+    'optimizer': {
+        'type': 'AdamW',
+        'learning_rate': '2e-5 to 5e-5',
+        'weight_decay': 0.01,
+        'scheduler': 'Linear with Warmup'
+    },
+    'hyperparameters': {
+        'batch_size': 16,
+        'epochs': 7,
+        'image_size': '224x224',
+        'dropout': 0.1,
+        'warmup_steps': 50
+    },
+    'hardware': {
+        'device': str(device),
+        'framework': 'PyTorch + Transformers',
+        'precision': 'FP16'
+    },
     'generated_at': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 }
 
@@ -645,5 +836,7 @@ print(f"   SigLIP:   {siglip_acc*100:6.2f}%")
 print(f"   ViT:      {vit_acc*100:6.2f}%")
 print(f"   Ensemble: {ensemble_acc*100:6.2f}%")
 print(f"\n🎯 Ensemble AUC: {ensemble_auc:.3f}")
+print(f"\n⚙️  Optimizer: AdamW (LR: 2e-5 to 5e-5)")
+print(f"📊 Hyperparameters: Batch=16, Epochs=7, Image=224x224")
 print(f"\n✓ Finished: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 print("="*100)

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import ModelInfo from "../components/ModelInfo"; // ← ADD THIS IMPORT
 
 const ModelPerformance = () => {
   const navigate = useNavigate();
@@ -154,7 +155,7 @@ const ModelPerformance = () => {
               <div className="text-8xl">🏆</div>
             </div>
 
-            {/* Summary Stats - FIXED COLORS */}
+            {/* Summary Stats */}
             {data?.summary && (
               <div className="mt-8 grid md:grid-cols-4 gap-6">
                 <div className="bg-white rounded-2xl p-6 shadow-lg">
@@ -196,6 +197,12 @@ const ModelPerformance = () => {
           </div>
         </div>
 
+        {/* ========================================== */}
+        {/* ADD MODEL INFO COMPONENT HERE */}
+        {/* ========================================== */}
+        <ModelInfo />
+        {/* ========================================== */}
+
         <div className="space-y-10">
           {/* FIGURE 2 */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200">
@@ -218,6 +225,7 @@ const ModelPerformance = () => {
             </p>
           </section>
 
+          {/* REST OF YOUR CODE STAYS THE SAME... */}
           {/* FIGURE 3 */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-2 border-gray-200">
             <h2 className="text-3xl font-bold mb-6 flex items-center">
@@ -269,7 +277,7 @@ const ModelPerformance = () => {
             </p>
           </section>
 
-          {/* TABLE 2 - FIXED */}
+          {/* TABLE 2 */}
           {data?.classwise_performance && (
             <section className="bg-gradient-to-br from-white to-green-50 rounded-2xl shadow-xl p-8 border-2 border-green-200">
               <TableComponent
@@ -373,7 +381,7 @@ const ModelPerformance = () => {
             </section>
           )}
 
-          {/* TABLE 8 - FIXED */}
+          {/* TABLE 8 */}
           {data?.dataset_distribution && (
             <section className="bg-gradient-to-br from-white to-indigo-50 rounded-2xl shadow-xl p-8 border-2 border-indigo-200">
               <TableComponent
@@ -423,7 +431,7 @@ const ModelPerformance = () => {
             </p>
           </section>
 
-          {/* FINAL SUMMARY - FIXED COLORS */}
+          {/* FINAL SUMMARY */}
           {data?.performance_comparison && (
             <section className="bg-gradient-to-r from-emerald-600 to-teal-600 rounded-3xl shadow-2xl p-10 text-white">
               <h2 className="text-4xl font-bold mb-8 flex items-center">
@@ -493,8 +501,8 @@ const ModelPerformance = () => {
             <section className="bg-gray-200 rounded-2xl p-6 text-sm text-gray-700">
               <p className="text-center font-semibold">
                 <strong>Evaluation completed:</strong>{" "}
-                {data.summary.generated_at} •<strong> Dataset:</strong>{" "}
-                {data.summary.total_images} images •<strong> Models:</strong>{" "}
+                {data.summary.generated_at} • <strong>Dataset:</strong>{" "}
+                {data.summary.total_images} images • <strong>Models:</strong>{" "}
                 {data.summary.models_used.join(", ")}
               </p>
             </section>

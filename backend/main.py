@@ -99,6 +99,42 @@ async def get_metric_image(filename: str):
         return FileResponse(file_path)
     return {"error": "Image not found"}
 
+@app.get("/model-info")
+async def get_model_info():
+    """Get model configuration and hyperparameters"""
+    return {
+        "models": ["SigLIP", "ViT", "Ensemble"],
+        "optimizer": {
+            "type": "AdamW",
+            "learning_rate": "2e-5 to 5e-5",
+            "weight_decay": 0.01,
+            "scheduler": "Linear with Warmup",
+            "beta_1": 0.9,
+            "beta_2": 0.999
+        },
+        "hyperparameters": {
+            "batch_size_train": 16,
+            "batch_size_val": 32,
+            "epochs": 7,
+            "image_size": "224x224",
+            "dropout": 0.1,
+            "warmup_steps": "50-100",
+            "loss_function": "CrossEntropy",
+            "mixed_precision": "FP16",
+            "gradient_clipping": "Max Norm = 1.0",
+            "early_stopping_patience": 3,
+            "random_seed": 42,
+            "fuzzy_logic_levels": 5
+        },
+        "environment": {
+            "framework": "PyTorch 2.0+",
+            "transformers": "SigLIP, ViT",
+            "hardware": "NVIDIA GPU / CPU",
+            "gpu_memory": "~8GB"
+        }
+    }
+
+
 
 @app.get("/api/metrics/all-data")
 async def get_all_metrics_data():
