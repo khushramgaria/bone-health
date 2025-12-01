@@ -1,15 +1,15 @@
 {
-    "total_images": 108,
-    "fracture_images": 49,
-    "no_fracture_images": 59,
+    "total_images": 93,
+    "fracture_images": 43,
+    "no_fracture_images": 50,
     "models_used": [
         "SigLIP",
         "ViT (Simulated)",
         "Ensemble"
     ],
-    "siglip_accuracy": 0.815,
-    "vit_accuracy": 0.833,
-    "ensemble_accuracy": 0.824,
-    "ensemble_auc": 0.924,
-    "generated_at": "2025-11-30 15:15:48"
+    "siglip_accuracy": 0.946,
+    "vit_accuracy": 0.946,
+    "ensemble_accuracy": 0.946,
+    "ensemble_auc": 0.994,
+    "generated_at": "2025-12-01 15:01:59"
 }

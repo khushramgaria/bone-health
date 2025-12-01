@@ -186,7 +186,7 @@ const ModelPerformance = () => {
                 </div>
                 <div className="bg-white rounded-2xl p-6 shadow-lg">
                   <div className="text-5xl mb-3">🤖</div>
-                  <div className="text-4xl font-bold text-gray-800">3</div>
+                  <div className="text-4xl font-bold text-gray-800">2</div>
                   <div className="text-sm text-gray-600 font-semibold mt-1">
                     Models Tested
                   </div>

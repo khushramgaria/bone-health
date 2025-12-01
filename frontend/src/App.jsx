@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/fracture-detection" element={<FractureDetection />} />
-        {/*<Route path="/model-performance" element={<ModelPerformance />} />*/}
+        <Route path="/model-performance" element={<ModelPerformance />} />
         <Route path="/bone-density" element={<BoneDensityAnalysis />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
