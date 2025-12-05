@@ -7,7 +7,8 @@ import uvicorn
 from models import predict_fracture, predict_bone_health_from_image, predict_bone_health_from_values
 import json
 import os
-
+from fastapi.staticfiles import StaticFiles
+import report_api  # Import the new router
 
 app = FastAPI(
     title="Bone Health AI API",
@@ -24,6 +25,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount static files (for images)
+app.mount("/metrics", StaticFiles(directory="metrics_output"), name="metrics")
+
+# Include report API routes
+app.include_router(report_api.router)
 
 
 @app.post("/api/predict-fracture")

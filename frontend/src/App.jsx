@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import FractureDetection from "./pages/FractureDetection";
 import ModelPerformance from "./pages/ModelPerformance";
 import BoneDensityAnalysis from "./pages/BoneDensityAnalysis";
+import ReportPage from "./pages/ReportPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/fracture-detection" element={<FractureDetection />} />
         <Route path="/model-performance" element={<ModelPerformance />} />
         <Route path="/bone-density" element={<BoneDensityAnalysis />} />
+        <Route path="/report" element={<ReportPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
