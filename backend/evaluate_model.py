@@ -377,6 +377,40 @@ plt.savefig(os.path.join(output_folder, 'figure_5_confusion_matrices.png'), dpi=
 plt.close()
 print("  ✓ Figure 5 saved")
 
+# ============ ENSEMBLE CLASSIFICATION REPORT (CONSOLE LOG) ============
+print("\n" + "="*100)
+print("ENSEMBLE MODEL - DETAILED CLASSIFICATION REPORT")
+print("="*100)
+print(f"\nEvaluation Dataset: {len(y_true)} images")
+print(f"  - Fracture: {sum(y_true)} images")
+print(f"  - No Fracture: {len(y_true) - sum(y_true)} images")
+print("\n" + "-"*100)
+
+# Generate classification report text
+ensemble_report_text = classification_report(
+    y_true, 
+    ensemble_pred, 
+    target_names=['No Fracture', 'Fracture'],
+    digits=2,
+    zero_division=0
+)
+
+print(ensemble_report_text)
+
+# Print confusion matrix
+print("-"*100)
+print("Confusion Matrix (Ensemble):")
+cm = confusion_matrix(y_true, ensemble_pred)
+print("\n                Predicted")
+print("              No Fracture  Fracture")
+print(f"Actual No Fr      {cm[0][0]:3d}         {cm[0][1]:3d}")
+print(f"       Fracture   {cm[1][0]:3d}         {cm[1][1]:3d}")
+
+print("\n" + "="*100)
+print(f"✓ Ensemble Classification Report Generated")
+print("="*100)
+
+
 
 # ============ FIGURE 7: Radar Chart ============
 print("[FIGURE 7] Generating radar chart...")
