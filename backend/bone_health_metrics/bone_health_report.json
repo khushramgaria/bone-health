@@ -1,0 +1,33 @@
+{
+  "Normal": {
+    "precision": 0.974025974025974,
+    "recall": 1.0,
+    "f1-score": 0.9868421052631579,
+    "support": 75.0
+  },
+  "Osteopenia": {
+    "precision": 1.0,
+    "recall": 0.6470588235294118,
+    "f1-score": 0.7857142857142858,
+    "support": 17.0
+  },
+  "Osteoporosis": {
+    "precision": 0.8958333333333334,
+    "recall": 0.9772727272727273,
+    "f1-score": 0.9347826086956522,
+    "support": 44.0
+  },
+  "accuracy": 0.9485294117647058,
+  "macro avg": {
+    "precision": 0.9566197691197691,
+    "recall": 0.8747771836007129,
+    "f1-score": 0.9024463332243653,
+    "support": 136.0
+  },
+  "weighted avg": {
+    "precision": 0.9519751082251083,
+    "recall": 0.9485294117647058,
+    "f1-score": 0.9448583495182971,
+    "support": 136.0
+  }
+}

@@ -1,0 +1,1770 @@
+[
+  {
+    "filename": "1 (1).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 57.94532299041748,
+    "probabilities": {
+      "normal": 57.95,
+      "osteopenia": 10.77,
+      "osteoporosis": 31.28
+    }
+  },
+  {
+    "filename": "1 (11).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 50.37040114402771,
+    "probabilities": {
+      "normal": 50.37,
+      "osteopenia": 8.45,
+      "osteoporosis": 41.18
+    }
+  },
+  {
+    "filename": "1 (12).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 51.166510581970215,
+    "probabilities": {
+      "normal": 51.17,
+      "osteopenia": 7.59,
+      "osteoporosis": 41.24
+    }
+  },
+  {
+    "filename": "1 (13).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 55.68158030509949,
+    "probabilities": {
+      "normal": 55.68,
+      "osteopenia": 5.44,
+      "osteoporosis": 38.88
+    }
+  },
+  {
+    "filename": "1 (14).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 48.15106987953186,
+    "probabilities": {
+      "normal": 48.15,
+      "osteopenia": 10.69,
+      "osteoporosis": 41.16
+    }
+  },
+  {
+    "filename": "1 (16).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 56.37144446372986,
+    "probabilities": {
+      "normal": 56.37,
+      "osteopenia": 9.93,
+      "osteoporosis": 33.7
+    }
+  },
+  {
+    "filename": "1 (18).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 47.00669050216675,
+    "probabilities": {
+      "normal": 47.01,
+      "osteopenia": 11.43,
+      "osteoporosis": 41.57
+    }
+  },
+  {
+    "filename": "1 (19).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 56.99462890625,
+    "probabilities": {
+      "normal": 56.99,
+      "osteopenia": 9.1,
+      "osteoporosis": 33.9
+    }
+  },
+  {
+    "filename": "1 (22).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 59.26826000213623,
+    "probabilities": {
+      "normal": 59.27,
+      "osteopenia": 9.18,
+      "osteoporosis": 31.55
+    }
+  },
+  {
+    "filename": "1 (25).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 45.05561590194702,
+    "probabilities": {
+      "normal": 45.06,
+      "osteopenia": 24.92,
+      "osteoporosis": 30.02
+    }
+  },
+  {
+    "filename": "1 (26).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 64.31148052215576,
+    "probabilities": {
+      "normal": 64.31,
+      "osteopenia": 9.97,
+      "osteoporosis": 25.72
+    }
+  },
+  {
+    "filename": "1 (27).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 62.660396099090576,
+    "probabilities": {
+      "normal": 62.66,
+      "osteopenia": 4.72,
+      "osteoporosis": 32.62
+    }
+  },
+  {
+    "filename": "1 (28).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 61.198389530181885,
+    "probabilities": {
+      "normal": 61.2,
+      "osteopenia": 9.89,
+      "osteoporosis": 28.91
+    }
+  },
+  {
+    "filename": "1 (29).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 60.62854528427124,
+    "probabilities": {
+      "normal": 60.63,
+      "osteopenia": 9.76,
+      "osteoporosis": 29.61
+    }
+  },
+  {
+    "filename": "1 (30).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 58.843183517456055,
+    "probabilities": {
+      "normal": 58.84,
+      "osteopenia": 4.64,
+      "osteoporosis": 36.52
+    }
+  },
+  {
+    "filename": "1 (31).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 76.52336955070496,
+    "probabilities": {
+      "normal": 76.52,
+      "osteopenia": 2.82,
+      "osteoporosis": 20.66
+    }
+  },
+  {
+    "filename": "1 (33).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 49.3869811296463,
+    "probabilities": {
+      "normal": 49.39,
+      "osteopenia": 7.5,
+      "osteoporosis": 43.11
+    }
+  },
+  {
+    "filename": "1 (34).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 71.18324637413025,
+    "probabilities": {
+      "normal": 71.18,
+      "osteopenia": 6.82,
+      "osteoporosis": 21.99
+    }
+  },
+  {
+    "filename": "1 (35).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 76.00083947181702,
+    "probabilities": {
+      "normal": 76.0,
+      "osteopenia": 4.54,
+      "osteoporosis": 19.46
+    }
+  },
+  {
+    "filename": "1 (36).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 76.00083947181702,
+    "probabilities": {
+      "normal": 76.0,
+      "osteopenia": 4.54,
+      "osteoporosis": 19.46
+    }
+  },
+  {
+    "filename": "1 (37).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 47.07166254520416,
+    "probabilities": {
+      "normal": 47.07,
+      "osteopenia": 7.9,
+      "osteoporosis": 45.03
+    }
+  },
+  {
+    "filename": "1 (38).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 48.69636297225952,
+    "probabilities": {
+      "normal": 48.7,
+      "osteopenia": 5.43,
+      "osteoporosis": 45.87
+    }
+  },
+  {
+    "filename": "1 (4).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 44.87155079841614,
+    "probabilities": {
+      "normal": 44.87,
+      "osteopenia": 11.05,
+      "osteoporosis": 44.08
+    }
+  },
+  {
+    "filename": "1 (40).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 48.53920638561249,
+    "probabilities": {
+      "normal": 48.54,
+      "osteopenia": 7.63,
+      "osteoporosis": 43.83
+    }
+  },
+  {
+    "filename": "1 (41).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 72.91621565818787,
+    "probabilities": {
+      "normal": 72.92,
+      "osteopenia": 5.48,
+      "osteoporosis": 21.6
+    }
+  },
+  {
+    "filename": "1 (45).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 50.47411322593689,
+    "probabilities": {
+      "normal": 50.47,
+      "osteopenia": 4.93,
+      "osteoporosis": 44.59
+    }
+  },
+  {
+    "filename": "1 (46).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 53.86412739753723,
+    "probabilities": {
+      "normal": 53.86,
+      "osteopenia": 4.76,
+      "osteoporosis": 41.37
+    }
+  },
+  {
+    "filename": "1 (49).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 52.35288739204407,
+    "probabilities": {
+      "normal": 52.35,
+      "osteopenia": 14.09,
+      "osteoporosis": 33.56
+    }
+  },
+  {
+    "filename": "1 (50).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 57.629454135894775,
+    "probabilities": {
+      "normal": 57.63,
+      "osteopenia": 7.17,
+      "osteoporosis": 35.2
+    }
+  },
+  {
+    "filename": "1 (51).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 46.080997586250305,
+    "probabilities": {
+      "normal": 46.08,
+      "osteopenia": 18.17,
+      "osteoporosis": 35.75
+    }
+  },
+  {
+    "filename": "1 (52).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 59.74687933921814,
+    "probabilities": {
+      "normal": 59.75,
+      "osteopenia": 11.23,
+      "osteoporosis": 29.03
+    }
+  },
+  {
+    "filename": "1 (53).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 53.08902859687805,
+    "probabilities": {
+      "normal": 53.09,
+      "osteopenia": 9.38,
+      "osteoporosis": 37.53
+    }
+  },
+  {
+    "filename": "1 (54).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 48.70428442955017,
+    "probabilities": {
+      "normal": 48.7,
+      "osteopenia": 7.54,
+      "osteoporosis": 43.76
+    }
+  },
+  {
+    "filename": "1 (56).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 43.9997136592865,
+    "probabilities": {
+      "normal": 44.0,
+      "osteopenia": 13.66,
+      "osteoporosis": 42.34
+    }
+  },
+  {
+    "filename": "1 (57).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 60.39239168167114,
+    "probabilities": {
+      "normal": 60.39,
+      "osteopenia": 8.25,
+      "osteoporosis": 31.36
+    }
+  },
+  {
+    "filename": "1 (58).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 58.73548984527588,
+    "probabilities": {
+      "normal": 58.74,
+      "osteopenia": 11.48,
+      "osteoporosis": 29.78
+    }
+  },
+  {
+    "filename": "1 (59).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 44.9192076921463,
+    "probabilities": {
+      "normal": 44.92,
+      "osteopenia": 11.27,
+      "osteoporosis": 43.81
+    }
+  },
+  {
+    "filename": "1 (6).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 61.57975196838379,
+    "probabilities": {
+      "normal": 61.58,
+      "osteopenia": 10.9,
+      "osteoporosis": 27.52
+    }
+  },
+  {
+    "filename": "1 (7).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 57.642972469329834,
+    "probabilities": {
+      "normal": 57.64,
+      "osteopenia": 5.56,
+      "osteoporosis": 36.8
+    }
+  },
+  {
+    "filename": "1 (8).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 53.36481332778931,
+    "probabilities": {
+      "normal": 53.36,
+      "osteopenia": 8.7,
+      "osteoporosis": 37.94
+    }
+  },
+  {
+    "filename": "1 (9).PNG",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 51.82945132255554,
+    "probabilities": {
+      "normal": 51.83,
+      "osteopenia": 9.95,
+      "osteoporosis": 38.22
+    }
+  },
+  {
+    "filename": "1.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 40.822502970695496,
+    "probabilities": {
+      "normal": 40.82,
+      "osteopenia": 20.75,
+      "osteoporosis": 38.43
+    }
+  },
+  {
+    "filename": "10.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 44.3394273519516,
+    "probabilities": {
+      "normal": 44.34,
+      "osteopenia": 11.99,
+      "osteoporosis": 43.67
+    }
+  },
+  {
+    "filename": "12.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 45.10006308555603,
+    "probabilities": {
+      "normal": 45.1,
+      "osteopenia": 10.36,
+      "osteoporosis": 44.54
+    }
+  },
+  {
+    "filename": "13.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 47.937461733818054,
+    "probabilities": {
+      "normal": 47.94,
+      "osteopenia": 6.92,
+      "osteoporosis": 45.14
+    }
+  },
+  {
+    "filename": "14.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 54.36331629753113,
+    "probabilities": {
+      "normal": 54.36,
+      "osteopenia": 14.5,
+      "osteoporosis": 31.13
+    }
+  },
+  {
+    "filename": "16.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 51.3491153717041,
+    "probabilities": {
+      "normal": 51.35,
+      "osteopenia": 13.84,
+      "osteoporosis": 34.81
+    }
+  },
+  {
+    "filename": "18.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 50.99227428436279,
+    "probabilities": {
+      "normal": 50.99,
+      "osteopenia": 12.45,
+      "osteoporosis": 36.56
+    }
+  },
+  {
+    "filename": "22.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 44.09975707530975,
+    "probabilities": {
+      "normal": 44.1,
+      "osteopenia": 12.76,
+      "osteoporosis": 43.14
+    }
+  },
+  {
+    "filename": "25.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 39.08816576004028,
+    "probabilities": {
+      "normal": 39.09,
+      "osteopenia": 35.87,
+      "osteoporosis": 25.04
+    }
+  },
+  {
+    "filename": "27.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 53.77770662307739,
+    "probabilities": {
+      "normal": 53.78,
+      "osteopenia": 19.13,
+      "osteoporosis": 27.09
+    }
+  },
+  {
+    "filename": "28.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 53.98532152175903,
+    "probabilities": {
+      "normal": 53.99,
+      "osteopenia": 12.91,
+      "osteoporosis": 33.1
+    }
+  },
+  {
+    "filename": "29.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 51.3438880443573,
+    "probabilities": {
+      "normal": 51.34,
+      "osteopenia": 7.86,
+      "osteoporosis": 40.79
+    }
+  },
+  {
+    "filename": "3.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 38.708239793777466,
+    "probabilities": {
+      "normal": 38.71,
+      "osteopenia": 27.7,
+      "osteoporosis": 33.59
+    }
+  },
+  {
+    "filename": "30.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 43.3154821395874,
+    "probabilities": {
+      "normal": 43.32,
+      "osteopenia": 17.41,
+      "osteoporosis": 39.27
+    }
+  },
+  {
+    "filename": "31.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 58.775389194488525,
+    "probabilities": {
+      "normal": 58.78,
+      "osteopenia": 11.63,
+      "osteoporosis": 29.6
+    }
+  },
+  {
+    "filename": "32.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 45.4766184091568,
+    "probabilities": {
+      "normal": 45.48,
+      "osteopenia": 19.0,
+      "osteoporosis": 35.52
+    }
+  },
+  {
+    "filename": "33.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 45.82470953464508,
+    "probabilities": {
+      "normal": 45.82,
+      "osteopenia": 12.92,
+      "osteoporosis": 41.25
+    }
+  },
+  {
+    "filename": "34.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 47.62958288192749,
+    "probabilities": {
+      "normal": 47.63,
+      "osteopenia": 13.48,
+      "osteoporosis": 38.89
+    }
+  },
+  {
+    "filename": "35.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 46.58510982990265,
+    "probabilities": {
+      "normal": 46.59,
+      "osteopenia": 8.7,
+      "osteoporosis": 44.72
+    }
+  },
+  {
+    "filename": "36.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 46.58510982990265,
+    "probabilities": {
+      "normal": 46.59,
+      "osteopenia": 8.7,
+      "osteoporosis": 44.72
+    }
+  },
+  {
+    "filename": "37.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 36.22827231884003,
+    "probabilities": {
+      "normal": 36.23,
+      "osteopenia": 32.16,
+      "osteoporosis": 31.61
+    }
+  },
+  {
+    "filename": "41.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 55.06836175918579,
+    "probabilities": {
+      "normal": 55.07,
+      "osteopenia": 7.24,
+      "osteoporosis": 37.69
+    }
+  },
+  {
+    "filename": "44.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 43.766263127326965,
+    "probabilities": {
+      "normal": 43.77,
+      "osteopenia": 14.5,
+      "osteoporosis": 41.73
+    }
+  },
+  {
+    "filename": "46.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 43.39020252227783,
+    "probabilities": {
+      "normal": 43.39,
+      "osteopenia": 17.17,
+      "osteoporosis": 39.44
+    }
+  },
+  {
+    "filename": "49.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 38.71141970157623,
+    "probabilities": {
+      "normal": 38.71,
+      "osteopenia": 26.32,
+      "osteoporosis": 34.97
+    }
+  },
+  {
+    "filename": "5.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 49.226805567741394,
+    "probabilities": {
+      "normal": 49.23,
+      "osteopenia": 12.47,
+      "osteoporosis": 38.31
+    }
+  },
+  {
+    "filename": "50.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 39.17385637760162,
+    "probabilities": {
+      "normal": 39.17,
+      "osteopenia": 24.46,
+      "osteoporosis": 36.36
+    }
+  },
+  {
+    "filename": "52.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 49.395549297332764,
+    "probabilities": {
+      "normal": 49.4,
+      "osteopenia": 8.9,
+      "osteoporosis": 41.71
+    }
+  },
+  {
+    "filename": "54.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 48.178812861442566,
+    "probabilities": {
+      "normal": 48.18,
+      "osteopenia": 9.5,
+      "osteoporosis": 42.32
+    }
+  },
+  {
+    "filename": "56.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 35.810139775276184,
+    "probabilities": {
+      "normal": 35.81,
+      "osteopenia": 34.57,
+      "osteoporosis": 29.62
+    }
+  },
+  {
+    "filename": "58.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 40.13171195983887,
+    "probabilities": {
+      "normal": 40.13,
+      "osteopenia": 21.55,
+      "osteoporosis": 38.32
+    }
+  },
+  {
+    "filename": "6.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 49.3427574634552,
+    "probabilities": {
+      "normal": 49.34,
+      "osteopenia": 7.83,
+      "osteoporosis": 42.83
+    }
+  },
+  {
+    "filename": "7.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 57.16909170150757,
+    "probabilities": {
+      "normal": 57.17,
+      "osteopenia": 7.46,
+      "osteoporosis": 35.37
+    }
+  },
+  {
+    "filename": "8.png",
+    "folder": "normal",
+    "true_label": "Normal",
+    "predicted_label": "Normal",
+    "correct": true,
+    "confidence": 44.25818622112274,
+    "probabilities": {
+      "normal": 44.26,
+      "osteopenia": 19.48,
+      "osteoporosis": 36.27
+    }
+  },
+  {
+    "filename": "1 (13).PNG",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteoporosis",
+    "correct": false,
+    "confidence": 59.68993902206421,
+    "probabilities": {
+      "normal": 32.18,
+      "osteopenia": 8.13,
+      "osteoporosis": 59.69
+    }
+  },
+  {
+    "filename": "1 (14).PNG",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteoporosis",
+    "correct": false,
+    "confidence": 50.42681097984314,
+    "probabilities": {
+      "normal": 39.43,
+      "osteopenia": 10.14,
+      "osteoporosis": 50.43
+    }
+  },
+  {
+    "filename": "1 (15).PNG",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteoporosis",
+    "correct": false,
+    "confidence": 45.88331580162048,
+    "probabilities": {
+      "normal": 44.5,
+      "osteopenia": 9.62,
+      "osteoporosis": 45.88
+    }
+  },
+  {
+    "filename": "1 (16).PNG",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteoporosis",
+    "correct": false,
+    "confidence": 63.15617561340332,
+    "probabilities": {
+      "normal": 29.08,
+      "osteopenia": 7.76,
+      "osteoporosis": 63.16
+    }
+  },
+  {
+    "filename": "1 (17).PNG",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Normal",
+    "correct": false,
+    "confidence": 59.25201773643494,
+    "probabilities": {
+      "normal": 59.25,
+      "osteopenia": 8.23,
+      "osteoporosis": 32.52
+    }
+  },
+  {
+    "filename": "1 (18).PNG",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteoporosis",
+    "correct": false,
+    "confidence": 48.633694648742676,
+    "probabilities": {
+      "normal": 40.11,
+      "osteopenia": 11.26,
+      "osteoporosis": 48.63
+    }
+  },
+  {
+    "filename": "15.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 36.707526445388794,
+    "probabilities": {
+      "normal": 31.1,
+      "osteopenia": 36.71,
+      "osteoporosis": 32.19
+    }
+  },
+  {
+    "filename": "17.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 46.982380747795105,
+    "probabilities": {
+      "normal": 26.75,
+      "osteopenia": 46.98,
+      "osteoporosis": 26.27
+    }
+  },
+  {
+    "filename": "24.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 46.35143578052521,
+    "probabilities": {
+      "normal": 21.66,
+      "osteopenia": 46.35,
+      "osteoporosis": 31.98
+    }
+  },
+  {
+    "filename": "32.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 38.979968428611755,
+    "probabilities": {
+      "normal": 37.42,
+      "osteopenia": 38.98,
+      "osteoporosis": 23.6
+    }
+  },
+  {
+    "filename": "42.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 49.266067147254944,
+    "probabilities": {
+      "normal": 28.09,
+      "osteopenia": 49.27,
+      "osteoporosis": 22.65
+    }
+  },
+  {
+    "filename": "43.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 60.22410988807678,
+    "probabilities": {
+      "normal": 22.41,
+      "osteopenia": 60.22,
+      "osteoporosis": 17.36
+    }
+  },
+  {
+    "filename": "47.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 37.09802031517029,
+    "probabilities": {
+      "normal": 34.3,
+      "osteopenia": 37.1,
+      "osteoporosis": 28.6
+    }
+  },
+  {
+    "filename": "49.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 43.79415810108185,
+    "probabilities": {
+      "normal": 22.73,
+      "osteopenia": 43.79,
+      "osteoporosis": 33.48
+    }
+  },
+  {
+    "filename": "51.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 42.60951280593872,
+    "probabilities": {
+      "normal": 25.69,
+      "osteopenia": 42.61,
+      "osteoporosis": 31.7
+    }
+  },
+  {
+    "filename": "57.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 38.674965500831604,
+    "probabilities": {
+      "normal": 34.48,
+      "osteopenia": 38.67,
+      "osteoporosis": 26.84
+    }
+  },
+  {
+    "filename": "6.png",
+    "folder": "osteopenia",
+    "true_label": "Osteopenia",
+    "predicted_label": "Osteopenia",
+    "correct": true,
+    "confidence": 43.34723353385925,
+    "probabilities": {
+      "normal": 15.35,
+      "osteopenia": 43.35,
+      "osteoporosis": 41.3
+    }
+  },
+  {
+    "filename": "1 (1).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 62.60947585105896,
+    "probabilities": {
+      "normal": 26.24,
+      "osteopenia": 11.15,
+      "osteoporosis": 62.61
+    }
+  },
+  {
+    "filename": "1 (11).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 50.5510151386261,
+    "probabilities": {
+      "normal": 44.39,
+      "osteopenia": 5.06,
+      "osteoporosis": 50.55
+    }
+  },
+  {
+    "filename": "1 (13).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 59.68993902206421,
+    "probabilities": {
+      "normal": 32.18,
+      "osteopenia": 8.13,
+      "osteoporosis": 59.69
+    }
+  },
+  {
+    "filename": "1 (14).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 50.42681097984314,
+    "probabilities": {
+      "normal": 39.43,
+      "osteopenia": 10.14,
+      "osteoporosis": 50.43
+    }
+  },
+  {
+    "filename": "1 (15).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 45.88331580162048,
+    "probabilities": {
+      "normal": 44.5,
+      "osteopenia": 9.62,
+      "osteoporosis": 45.88
+    }
+  },
+  {
+    "filename": "1 (16).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 63.15617561340332,
+    "probabilities": {
+      "normal": 29.08,
+      "osteopenia": 7.76,
+      "osteoporosis": 63.16
+    }
+  },
+  {
+    "filename": "1 (18).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 48.633694648742676,
+    "probabilities": {
+      "normal": 40.11,
+      "osteopenia": 11.26,
+      "osteoporosis": 48.63
+    }
+  },
+  {
+    "filename": "1 (21).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 43.28626096248627,
+    "probabilities": {
+      "normal": 39.38,
+      "osteopenia": 17.34,
+      "osteoporosis": 43.29
+    }
+  },
+  {
+    "filename": "1 (22).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 43.30682456493378,
+    "probabilities": {
+      "normal": 40.63,
+      "osteopenia": 16.06,
+      "osteoporosis": 43.31
+    }
+  },
+  {
+    "filename": "1 (29).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 45.93380093574524,
+    "probabilities": {
+      "normal": 40.15,
+      "osteopenia": 13.92,
+      "osteoporosis": 45.93
+    }
+  },
+  {
+    "filename": "1 (30).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 45.58943212032318,
+    "probabilities": {
+      "normal": 38.0,
+      "osteopenia": 16.41,
+      "osteoporosis": 45.59
+    }
+  },
+  {
+    "filename": "1 (31).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 43.08983385562897,
+    "probabilities": {
+      "normal": 41.49,
+      "osteopenia": 15.42,
+      "osteoporosis": 43.09
+    }
+  },
+  {
+    "filename": "1 (32).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 52.75946855545044,
+    "probabilities": {
+      "normal": 36.77,
+      "osteopenia": 10.48,
+      "osteoporosis": 52.76
+    }
+  },
+  {
+    "filename": "1 (34).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 50.817084312438965,
+    "probabilities": {
+      "normal": 38.81,
+      "osteopenia": 10.37,
+      "osteoporosis": 50.82
+    }
+  },
+  {
+    "filename": "1 (38).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 59.43949818611145,
+    "probabilities": {
+      "normal": 30.35,
+      "osteopenia": 10.21,
+      "osteoporosis": 59.44
+    }
+  },
+  {
+    "filename": "1 (41).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Normal",
+    "correct": false,
+    "confidence": 64.06229734420776,
+    "probabilities": {
+      "normal": 64.06,
+      "osteopenia": 6.36,
+      "osteoporosis": 29.58
+    }
+  },
+  {
+    "filename": "1 (42).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 49.59472119808197,
+    "probabilities": {
+      "normal": 40.21,
+      "osteopenia": 10.19,
+      "osteoporosis": 49.59
+    }
+  },
+  {
+    "filename": "1 (46).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 47.53631949424744,
+    "probabilities": {
+      "normal": 42.54,
+      "osteopenia": 9.93,
+      "osteoporosis": 47.54
+    }
+  },
+  {
+    "filename": "1 (48).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 47.109246253967285,
+    "probabilities": {
+      "normal": 39.98,
+      "osteopenia": 12.91,
+      "osteoporosis": 47.11
+    }
+  },
+  {
+    "filename": "1 (49).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 54.60925102233887,
+    "probabilities": {
+      "normal": 33.88,
+      "osteopenia": 11.51,
+      "osteoporosis": 54.61
+    }
+  },
+  {
+    "filename": "1 (5).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 44.47284638881683,
+    "probabilities": {
+      "normal": 38.25,
+      "osteopenia": 17.28,
+      "osteoporosis": 44.47
+    }
+  },
+  {
+    "filename": "1 (53).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 56.104350090026855,
+    "probabilities": {
+      "normal": 35.28,
+      "osteopenia": 8.62,
+      "osteoporosis": 56.1
+    }
+  },
+  {
+    "filename": "1 (6).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 45.18379271030426,
+    "probabilities": {
+      "normal": 22.87,
+      "osteopenia": 31.95,
+      "osteoporosis": 45.18
+    }
+  },
+  {
+    "filename": "1 (7).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 56.60353899002075,
+    "probabilities": {
+      "normal": 34.74,
+      "osteopenia": 8.66,
+      "osteoporosis": 56.6
+    }
+  },
+  {
+    "filename": "1 (8).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 45.02705931663513,
+    "probabilities": {
+      "normal": 44.68,
+      "osteopenia": 10.29,
+      "osteoporosis": 45.03
+    }
+  },
+  {
+    "filename": "1 (9).PNG",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 44.9645072221756,
+    "probabilities": {
+      "normal": 37.3,
+      "osteopenia": 17.74,
+      "osteoporosis": 44.96
+    }
+  },
+  {
+    "filename": "1.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 49.362000823020935,
+    "probabilities": {
+      "normal": 35.74,
+      "osteopenia": 14.89,
+      "osteoporosis": 49.36
+    }
+  },
+  {
+    "filename": "10.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 57.848334312438965,
+    "probabilities": {
+      "normal": 35.95,
+      "osteopenia": 6.2,
+      "osteoporosis": 57.85
+    }
+  },
+  {
+    "filename": "11.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 49.13963973522186,
+    "probabilities": {
+      "normal": 31.66,
+      "osteopenia": 19.2,
+      "osteoporosis": 49.14
+    }
+  },
+  {
+    "filename": "14.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 36.50353252887726,
+    "probabilities": {
+      "normal": 36.41,
+      "osteopenia": 27.09,
+      "osteoporosis": 36.5
+    }
+  },
+  {
+    "filename": "2.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 45.5875962972641,
+    "probabilities": {
+      "normal": 33.55,
+      "osteopenia": 20.86,
+      "osteoporosis": 45.59
+    }
+  },
+  {
+    "filename": "23.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 40.67355394363403,
+    "probabilities": {
+      "normal": 40.04,
+      "osteopenia": 19.29,
+      "osteoporosis": 40.67
+    }
+  },
+  {
+    "filename": "27.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 44.39361095428467,
+    "probabilities": {
+      "normal": 25.51,
+      "osteopenia": 30.1,
+      "osteoporosis": 44.39
+    }
+  },
+  {
+    "filename": "40.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 57.112228870391846,
+    "probabilities": {
+      "normal": 27.12,
+      "osteopenia": 15.77,
+      "osteoporosis": 57.11
+    }
+  },
+  {
+    "filename": "41.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 57.112228870391846,
+    "probabilities": {
+      "normal": 27.12,
+      "osteopenia": 15.77,
+      "osteoporosis": 57.11
+    }
+  },
+  {
+    "filename": "44.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 49.95408654212952,
+    "probabilities": {
+      "normal": 29.77,
+      "osteopenia": 20.28,
+      "osteoporosis": 49.95
+    }
+  },
+  {
+    "filename": "48.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 38.5347843170166,
+    "probabilities": {
+      "normal": 24.49,
+      "osteopenia": 36.97,
+      "osteoporosis": 38.53
+    }
+  },
+  {
+    "filename": "49.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 48.29333424568176,
+    "probabilities": {
+      "normal": 41.83,
+      "osteopenia": 9.87,
+      "osteoporosis": 48.29
+    }
+  },
+  {
+    "filename": "50.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 41.088831424713135,
+    "probabilities": {
+      "normal": 33.29,
+      "osteopenia": 25.62,
+      "osteoporosis": 41.09
+    }
+  },
+  {
+    "filename": "51.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 35.294052958488464,
+    "probabilities": {
+      "normal": 35.14,
+      "osteopenia": 29.57,
+      "osteoporosis": 35.29
+    }
+  },
+  {
+    "filename": "53.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 46.692466735839844,
+    "probabilities": {
+      "normal": 35.88,
+      "osteopenia": 17.43,
+      "osteoporosis": 46.69
+    }
+  },
+  {
+    "filename": "54.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 46.692466735839844,
+    "probabilities": {
+      "normal": 35.88,
+      "osteopenia": 17.43,
+      "osteoporosis": 46.69
+    }
+  },
+  {
+    "filename": "55.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 46.92348837852478,
+    "probabilities": {
+      "normal": 46.23,
+      "osteopenia": 6.85,
+      "osteoporosis": 46.92
+    }
+  },
+  {
+    "filename": "7.png",
+    "folder": "osteoporosis",
+    "true_label": "Osteoporosis",
+    "predicted_label": "Osteoporosis",
+    "correct": true,
+    "confidence": 53.26132774353027,
+    "probabilities": {
+      "normal": 29.42,
+      "osteopenia": 17.32,
+      "osteoporosis": 53.26
+    }
+  }
+]

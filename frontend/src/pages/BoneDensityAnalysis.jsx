@@ -117,6 +117,45 @@ const BoneDensityAnalysis = () => {
     return "bg-blue-100 border-blue-500 text-blue-800";
   };
 
+  // helper to render detailed interpretation list
+  const renderDetailedInterpretation = () => {
+    if (!result || !result.detailed_interpretation) return null;
+
+    return (
+      <div className="mt-10 bg-white rounded-2xl shadow-xl p-8 border border-gray-200">
+        <h3 className="text-3xl font-bold mb-4 text-gray-800 flex items-center">
+          <span className="text-3xl mr-3">🔎</span>
+          Detailed AI Explanation
+        </h3>
+        <p className="text-gray-600 mb-4">
+          The AI explains step‑by‑step why it predicted this bone health
+          category, similar to how Google Lens gives information about an image.
+        </p>
+        <div className="space-y-4">
+          {result.detailed_interpretation.map((point, idx) => (
+            <div
+              key={idx}
+              className="bg-gray-50 border-l-4 border-teal-500 rounded-r-xl p-4"
+            >
+              <h4 className="font-bold text-lg text-gray-800">{point.title}</h4>
+              <p className="text-sm text-gray-600 mt-1">
+                <span className="font-semibold">Finding:</span> {point.finding}{" "}
+                {point.confidence && (
+                  <span className="ml-2 text-xs text-gray-500">
+                    ({point.confidence})
+                  </span>
+                )}
+              </p>
+              <p className="text-gray-700 mt-2 leading-relaxed">
+                {point.explanation}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
+  };
+
   // MODE SELECTION SCREEN
   if (!mode) {
     return (
@@ -623,6 +662,9 @@ const BoneDensityAnalysis = () => {
                   {result.interpretation}
                 </p>
               </div>
+
+              {/* NEW: Detailed AI Explanation */}
+              {renderDetailedInterpretation()}
 
               {/* WHO Classification Table */}
               <div className="mt-10">

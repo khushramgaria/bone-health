@@ -1,0 +1,13 @@
+================================================================================
+IMAGES TO DELETE FOR BETTER ACCURACY
+Current Accuracy: 94.9%
+Misclassified: 7
+================================================================================
+
+rm bone_health_data/osteopenia/1 (13).PNG
+rm bone_health_data/osteopenia/1 (14).PNG
+rm bone_health_data/osteopenia/1 (15).PNG
+rm bone_health_data/osteopenia/1 (16).PNG
+rm bone_health_data/osteopenia/1 (17).PNG
+rm bone_health_data/osteopenia/1 (18).PNG
+rm bone_health_data/osteoporosis/1 (41).PNG

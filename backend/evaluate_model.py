@@ -391,7 +391,7 @@ ensemble_report_text = classification_report(
     y_true, 
     ensemble_pred, 
     target_names=['No Fracture', 'Fracture'],
-    digits=2,
+    digits=3,
     zero_division=0
 )
 

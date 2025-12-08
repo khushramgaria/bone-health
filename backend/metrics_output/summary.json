@@ -8,9 +8,9 @@
         "Ensemble"
     ],
     "siglip_accuracy": 0.946,
-    "vit_accuracy": 0.968,
+    "vit_accuracy": 0.978,
     "ensemble_accuracy": 0.957,
-    "ensemble_auc": 0.995,
+    "ensemble_auc": 0.996,
     "optimizer": {
         "type": "AdamW",
         "learning_rate": "2e-5 to 5e-5",
@@ -29,5 +29,5 @@
         "framework": "PyTorch + Transformers",
         "precision": "FP16"
     },
-    "generated_at": "2025-12-05 13:07:14"
+    "generated_at": "2025-12-05 13:23:03"
 }

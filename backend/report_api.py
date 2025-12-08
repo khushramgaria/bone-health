@@ -120,3 +120,41 @@ async def get_report_image(image_name: str):
         raise HTTPException(status_code=404, detail=f"Image not found: {image_name}")
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+# Add these new endpoints to your existing report_api.py
+
+@router.get("/api/bone-health/report")
+async def get_bone_health_report():
+    """Get bone health evaluation report"""
+    try:
+        bone_health_dir = Path("bone_health_metrics")
+        
+        data = {}
+        
+        # Read summary
+        summary_file = bone_health_dir / "summary.json"
+        if summary_file.exists():
+            with open(summary_file, 'r') as f:
+                data["summary"] = json.load(f)
+        
+        # Read classification report
+        report_file = bone_health_dir / "bone_health_report.json"
+        if report_file.exists():
+            with open(report_file, 'r') as f:
+                data["report"] = json.load(f)
+        
+        return data
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.get("/api/bone-health/images/{image_name}")
+async def get_bone_health_image(image_name: str):
+    """Serve bone health metric images"""
+    try:
+        image_path = Path("bone_health_metrics") / image_name
+        if image_path.exists():
+            return FileResponse(image_path)
+        raise HTTPException(status_code=404, detail="Image not found")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

@@ -1,0 +1,17 @@
+{
+  "model": "BiomedCLIP/CLIP",
+  "total_images": 136,
+  "correct_predictions": 129,
+  "overall_accuracy": 94.85,
+  "per_class_accuracy": {
+    "normal": 100.0,
+    "osteopenia": 64.71,
+    "osteoporosis": 97.73
+  },
+  "per_class_counts": {
+    "normal": "75/75",
+    "osteopenia": "11/17",
+    "osteoporosis": "43/44"
+  },
+  "generated_at": "2025-12-08 16:14:43"
+}
